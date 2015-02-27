@@ -38,7 +38,7 @@ if (defined('ENVIRONMENT'))
 		case 'development':
 			error_reporting(E_ALL);
 		break;
-
+            
 		case 'testing':
 		case 'production':
 			error_reporting(0);
@@ -47,6 +47,11 @@ if (defined('ENVIRONMENT'))
 		default:
 			exit('The application environment is not set correctly.');
 	}
+    
+    for ($pat = 0; $pat < 20; $pat++)
+    {
+        echo $pat;
+    }
 }
 
 /*
